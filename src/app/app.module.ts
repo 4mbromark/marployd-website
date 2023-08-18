@@ -9,6 +9,8 @@ import { InfoComponent } from './content/info/info.component';
 import { PhotoSetComponent } from './content/photo-set/photo-set.component';
 import { StoreYourPolaroidComponent } from './content/store-your-polaroid/store-your-polaroid.component';
 import { PhotoInfoComponent } from './content/photo-info/photo-info.component';
+import { FaqComponent } from './content/faq/faq.component';
+import { RulesComponent } from './content/rules/rules.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PhotoInfoComponent } from './content/photo-info/photo-info.component';
     InfoComponent,
     PhotoSetComponent,
     StoreYourPolaroidComponent,
-    PhotoInfoComponent
+    PhotoInfoComponent,
+    FaqComponent,
+    RulesComponent
   ],
   imports: [
     BrowserModule,

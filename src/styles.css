@@ -60,7 +60,7 @@ html, body {
 
 .marployd-page-content {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .marployd-page-title {
@@ -78,9 +78,14 @@ html, body {
 
 .marployd-page-button {
   width: 100%;
+  max-width: 500px;
   padding: 5px;
   margin: 3px;
   font-size: 20px;
   border: none !important;
   color: black;
+}
+
+.marployd-page-separator {
+  color: white;
 }

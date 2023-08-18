@@ -1,5 +1,3 @@
-import { Component } from "@angular/core";
-
 export enum MarploydType {
   ACCORDION,
   NAVBAR
@@ -16,5 +14,7 @@ export enum MarploydContentRef {
   PHOTO_SET = 'photo-set',
   EVENT_HISTORY = 'event-history',
   PHOTOS_INFO = 'photos-info',
-  STORE_YOUR_POLAROID = 'store-your-polaroid'
+  STORE_YOUR_POLAROID = 'store-your-polaroid',
+  FAQ = 'faq',
+  RULES = 'rules'
 }
