@@ -1,0 +1,25 @@
+{
+  "photos": {
+    "list": [
+      {
+        "timestamp": 1111111111,
+        "title": "Raphtalia Sea",
+        "description": "",
+        "more": "",
+        "event": {
+          "name": "Rimini Comix",
+          "date": "16 luglio 2023"
+        },
+        "subject": {
+          "character": "Raphtalia",
+          "series": "The Rising of the Shield Hero"
+        },
+        "cosplayer": {
+          "name": "Vivy",
+          "contact": "@cherryive.ig"
+        },
+        "preview-name": ""
+      }
+    ]
+  }
+}

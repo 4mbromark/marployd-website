@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbAccordionModule, NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { StoreYourPolaroidComponent } from './content/store-your-polaroid/store-
 import { PhotoInfoComponent } from './content/photo-info/photo-info.component';
 import { FaqComponent } from './content/faq/faq.component';
 import { RulesComponent } from './content/rules/rules.component';
+import { PhotoDiscoveryComponent } from './content/photo-discovery/photo-discovery.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import { RulesComponent } from './content/rules/rules.component';
     StoreYourPolaroidComponent,
     PhotoInfoComponent,
     FaqComponent,
-    RulesComponent
+    RulesComponent,
+    PhotoDiscoveryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbAccordionModule,
+    HttpClientModule,
     NgbNavModule
   ],
   providers: [],

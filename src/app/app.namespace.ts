@@ -1,8 +1,3 @@
-export enum MarploydType {
-  ACCORDION,
-  NAVBAR
-}
-
 export class MarploydContent {
   id: string;
   title: string;
@@ -11,10 +6,41 @@ export class MarploydContent {
 
 export enum MarploydContentRef {
   INFORMATIONS = 'info',
-  PHOTO_SET = 'photo-set',
-  EVENT_HISTORY = 'event-history',
-  PHOTOS_INFO = 'photos-info',
-  STORE_YOUR_POLAROID = 'store-your-polaroid',
   FAQ = 'faq',
-  RULES = 'rules'
+  EVENT_HISTORY = 'event-history',
+  PHOTO_DISCOVERY = "photo-discovery"
+}
+
+export class MarploydDiscoveryData {
+  photos: MarploydDiscoveryPhotos
+}
+
+export class MarploydDiscoveryPhotos {
+  list: MarploydDiscoveryPhoto[];
+}
+
+export class MarploydDiscoveryPhoto {
+  timestamp: number;
+  title: string;
+  description: string;
+  more: string;
+  event: MarploydDiscoveryEvent;
+  subject: MarploydDiscoverySubject;
+  cosplayer: MarploydDiscoveryCosplayer;
+  preview: string;
+}
+
+export class MarploydDiscoveryEvent {
+  name: string;
+  date: string;
+}
+
+export class MarploydDiscoverySubject {
+  character: string;
+  series: string;
+}
+
+export class MarploydDiscoveryCosplayer {
+  name: string;
+  contact: string;
 }

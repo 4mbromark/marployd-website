@@ -4,29 +4,7 @@
     <img class="marployd-logo" [src]="marploydLogo">
   </div>
 
-
-
-  <!-- MARPLOYD ACCORDION -->
-  <!--  -->
-
-  <!-- <div *ngIf="marploydType.ACCORDION === type">
-    <ngb-accordion #accordion="ngbAccordion"> !--activeIds="ngb-panel-0"--
-      <ngb-panel *ngFor="let content of marployd" class="marployd-accordion-item" [title]="content.title">
-        <ng-template ngbPanelContent>
-          <div class="marployd-content">
-            <router-outlet class="marployd-100"></router-outlet>
-          </div>
-        </ng-template>
-      </ngb-panel>
-    </ngb-accordion>
-  </div> -->
-
-
-
-  <!-- MARPLOYD NAVBAR -->
-  <!--  -->
-
-  <div *ngIf="marploydType.NAVBAR === type" class="marployd-navbar">
+  <div class="marployd-navbar">
     <ul ngbNav #navbar="ngbNav" [activeId]="activeRef" class="nav-tabs"> <!--class="nav-tabs"-->
       <li *ngFor="let content of marployd" [ngbNavItem]="content.id">
         <a ngbNavLink [routerLink]="content.ref" (click)="setActiveRef(content.ref);">{{ content.title }}</a>
